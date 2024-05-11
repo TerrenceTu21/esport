@@ -1,0 +1,77 @@
+
+html{
+    background-image:url('../pics/reglol.jpg');  
+    background-size:cover;
+}
+body 
+{
+  color:white;
+}
+#formlol{
+    width:50%;
+    border: 3px solid whitesmoke;
+    border-radius: 10px;
+    background-image:url('../pics/reglol2.jpg');
+    background-size:cover;
+    margin:100px auto;
+    transition: 0.7s;
+    margin-top:50px;
+}
+#formlol:hover{
+     border: 3px solid #7DD5FA;
+  
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+width:  40%;
+padding: 10px 10px;
+margin: 8px 0;
+display: inline-block;
+border: 2px solid #ccc;
+box-sizing: border-box;
+border-radius: 10px;
+
+}
+#teamName{
+    width:30%;
+
+}
+
+input[type=submit] {
+    color:white;
+    width:20%;    
+    margin-left:80px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+input[type=reset] { 
+    color:white;   
+    width:20%;
+    border-radius: 10px;
+    cursor: pointer;
+}   
+input[type=reset]:hover, input[type=submit]:hover{
+    color:#7DD5FA;
+}
+
+  .waviy {
+    text-align:center;
+    position: relative;
+   
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 4.5vw;
+    font-style:italic;
+    color:#7DD5FA;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+ 

@@ -1,0 +1,87 @@
+
+html{
+    background-image:url('../pics/regd2.jpg');  
+    background-size:cover;
+}
+body 
+{
+  color:white;
+}
+#formdota{
+    width:50%;
+    border: 3px solid white;
+    border-radius: 10px;
+    background-image:url('../pics/registerdota2.png');
+    background-size:cover;
+    margin:100px auto;
+    margin-top:20px;
+    transition: 0.7s;
+}
+#formdota:hover{
+      border: 3px solid #7DD5FA;
+  
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+width:  40%;
+padding: 10px 10px;
+margin: 8px 0;
+display: inline-block;
+border: 2px solid #ccc;
+box-sizing: border-box;
+border-radius: 10px;
+
+}
+#teamName{
+    width:30%;
+
+}
+
+input[type=submit] {
+    color:white;
+    width:20%;    
+    margin-left:80px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+input[type=reset] { 
+    color:white;   
+    width:20%;
+    border-radius: 10px;
+    cursor: pointer;
+}   
+input[type=reset]:hover, input[type=submit]:hover{
+    color:#7DD5FA;
+}
+h3{
+    margin-left:300px;  
+}
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+        font-size:5vw;
+      font-weight:500px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+

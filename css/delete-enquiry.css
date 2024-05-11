@@ -1,0 +1,52 @@
+
+body{
+    background-image:url('../pics/enquiry.jpg');
+    background-position:center;
+    background-size:cover;
+    background-attachment: fixed;
+    color:white;
+}
+h1{
+    text-align:center;
+    font-size:50px;
+}
+
+
+table{
+    background-color:black;
+    border:2px solid red;
+    border-radius:10px;
+    width:50%;
+    margin:0 auto;
+    margin-bottom:50px;
+}
+.input{
+    text-align:center;
+    margin:0 auto;
+
+}
+.back{
+    text-decoration:none;
+    color:white;
+}
+.back:hover{
+    color:red;
+}
+input[type="submit"]{
+    width:30%;
+    padding:10px;
+    border-radius:8px;
+    font-weight:bold;
+
+}
+input[type="button"]{
+    width:30%;
+    padding:10px;
+    border-radius:8px;
+    font-weight:bold;
+}
+input:hover{
+    cursor:pointer;
+    background-color:red;
+    color:white;
+}

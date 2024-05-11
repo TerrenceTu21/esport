@@ -1,0 +1,121 @@
+html{
+    background-image:url('../pics/loginbg.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+    
+}
+body{
+    color:white;
+}
+#loginp{
+    margin-bottom:50px;
+}
+label{
+    font-size:1vw;
+}
+#userlogin{
+    font-weight:bold;
+    margin:30px;
+    cursor: pointer;
+    outline:none;
+}
+#userlogin:hover{
+  color:whitesmoke;
+}
+#registerwel{
+    font-weight:bold;
+    margin-bottom:50px;
+}
+.user_loginbutton{
+    border:1px solid white;
+    color:white;
+    padding:10px;
+    text-decoration:none;
+}
+.user_registerbutton:hover,.user_loginbutton:hover{
+   border:3px solid whitesmoke;
+   color:white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color:grey;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius:10px;
+    margin:30px;
+    padding: 50px;  
+    height:100%;
+    text-align:center;
+  }
+  
+  #user_register{
+    width:90%;
+    height:90%;
+    background-image:url('../pics/welcome.png');
+    background-size:cover;
+    opacity:0.9;
+    transition:0.7s;
+  }
+  #user_login{
+    width:90%;
+    height:90%;
+    background-image:url('../pics/login1.png');
+    background-size:cover;
+    background-position:center;
+    opacity:0.9;
+    transition:0.7s;
+  }
+  .grid-item:hover{
+    border: 1px solid whitesmoke;
+
+  }
+  .errorMessages{
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+  }
+  input{
+    border-radius:4px;
+    margin:10px;
+  }
+  input[type=text]{
+    border-radius:6px;
+  }
+  input[type=submit],input[type=reset]{
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+    width:150px;
+    border-radius:10px;
+  }
+  input[type=submit]:hover{
+    color:whitesmoke;
+
+  }
+  input[type=password]{
+    border-radius:6px; 
+  }
+  #agreement a{
+    color:#7DD5FA;
+  }
+  @media only screen and (max-width:595px){
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto;
+      padding: 10px;
+    }
+    #user_login{
+      height:90%;
+    }
+    .registerBtn{
+      padding:10px;
+      color:#7DD5FA;
+  
+    }
+  }
+  
+  

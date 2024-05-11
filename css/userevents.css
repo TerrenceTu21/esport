@@ -1,0 +1,103 @@
+body{
+    background-image:url('../pics/event222.png'); 
+    background-size:cover;
+}
+
+.userEvents{
+    border:2px solid pink;
+    border-radius: 10px;
+    color:white;
+    width:400px;
+    height:400px;
+    background-color: black!important;
+    padding:20px;
+}
+.userEvents {
+    --c: white; /* the color */
+    --b: .1em;    /* border length*/
+    --d: 5px;    /* the cube depth */
+    --_s: calc(var(--d) + var(--b));
+    
+    color: var(--c);
+    border: solid whitesmoke;
+    border-width: var(--b) var(--b) var(--_s) var(--_s);
+    background:
+      conic-gradient(at left var(--d)  bottom var(--d),
+        #0000 90deg, rgb(255 255 255 /0.3) 0 225deg,rgb(255 255 255 /0.6) 0) border-box,
+      conic-gradient(at left var(--_s) bottom var(--_s),
+        #0000 90deg,var(--c) 0) 0 100%/calc(100% - var(--b)) calc(100% - var(--b))  border-box;
+    transform: translate(calc(var(--d)/-1),var(--d));
+    clip-path: 
+      polygon(
+       var(--d) 0%, 
+       var(--d) 0%, 
+       100% 0%, 
+       100% calc(100% - var(--d)),
+       100% calc(100% - var(--d)),
+       var(--d) calc(100% - var(--d))
+      );
+    transition: 0.5s;
+  }
+ .userEvents:hover {
+    transform: translate(0,0);
+    clip-path: 
+      polygon(
+       0% var(--d), 
+       var(--d) 0%, 
+       100% 0%, 
+       100% calc(100% - var(--d)), 
+       calc(100% - var(--d)) 100%, 
+       0% 100%
+     );
+  }
+
+.detail{
+    margin-top:10px;
+}
+.links{
+    text-decoration:none;
+    font-weight:bold;
+    color: #0099ff;;
+}
+.links:hover{
+    color:lightblue;
+}
+.eventsStyling{
+    width:100%;
+    display:flex; 
+    justify-content: space-around;
+    margin: 20px;
+} 
+
+.filtering ul{
+    width:70%;
+    padding:50px;
+    display:flex;
+    justify-content: space-around;
+}
+
+.filtering ul li{
+    list-style-type: none;
+    text-align: center;
+    border:1px solid white;
+    border-radius:20px;
+    padding:20px 20px;
+    font-weight:bold;
+    background-color: black;
+}
+
+.filtering a{
+    width:100%;
+    padding:20px 20px;
+    text-decoration: none;
+    color:white;
+    justify-content: space-around;
+}
+.filtering   a:hover{
+    color:blue     ;
+}
+
+.filtering ul li:hover{
+    background-color: grey;
+}
+

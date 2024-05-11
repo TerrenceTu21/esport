@@ -1,0 +1,185 @@
+html{
+    background-image: url('../pics/bgpic2.jpg');
+    background-size:cover;
+}
+body 
+{
+font-family: Arial, Helvetica, sans-serif;
+color:#92F0AB;
+margin-left:auto;
+ margin-right:auto;
+ background-color: white;
+     box-shadow: rgb(51, 51, 51) 20px 0px 40px,  rgb(51, 51, 51) -20px 0px 40px,
+        inset rgb(51, 21, 21) 0px 0px 40px;
+    border-left: 3px solid rgb(51, 51, 51);
+    border-right: 3px solid rgb(51, 51, 51);
+    min-height: 100%;  
+    margin: 0px auto;
+    min-width: 320px;
+    max-width: 1020px;  
+    width: 100%;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+width: 100%;
+padding: 10px 10px;
+margin: 8px 0;
+display: inline-block;
+border: 2px solid #ccc;
+box-sizing: border-box;
+border-radius: 10px;
+}
+input[type=submit] {    
+    margin-left:140px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+input[type=reset] {    
+    border-radius: 10px;
+    cursor: pointer;
+}
+select{
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+border-radius: 10px;
+}
+
+/* Set a style for all buttons */
+#login{
+text-decoration: none;
+color: red;
+font-size:20px;
+padding: 14px 20px;
+margin: auto;
+margin-top: 0px;
+margin-left: 916px;
+border: none;
+cursor: pointer;
+width: 100%;
+}
+#login:hover {
+color: white;
+ }
+ #login2{
+    color: red;
+    font-size:20px;
+    
+ }
+.register,#login{
+    background-image:url("../pics/bgpic1.jpg");
+
+}
+button {
+    background-color:black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    }
+
+button:hover {
+opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+width: auto;
+padding: 10px 18px;
+background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+background-color: black;
+text-align: center;
+margin: 24px 0 12px 0;
+position: relative;
+}
+
+img.esport {
+width: 60%;
+}
+
+.container {
+padding: 16px;
+background-color:black;
+}
+
+span.psw {
+float: right;
+padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+background-color: black;
+margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+border: 1px solid #888;
+width: 80%; /* Could be more or less, depending on screen size */
+height:450px;
+}
+
+/* The Close Button (x) */
+.close {
+position: absolute;
+right: 25px;
+top: 0;
+color: #000;
+font-size: 35px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: red;
+cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+-webkit-animation: animatezoom 0.6s;
+animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+from {-webkit-transform: scale(0)} 
+to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+from {transform: scale(0)} 
+to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {  
+    span.psw {
+    display: block;
+    float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+    }

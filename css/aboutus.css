@@ -1,0 +1,425 @@
+
+body {
+    background-image:url('../pics/abtus.png');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    font-family: "Lucida Console", "Courier New", monospace;
+color:white;   
+min-height: 100%;  
+min-width: 320px;
+width: 100%;
+}
+
+#goUp {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#goUp:hover {
+  background-color: #555;
+
+}
+.aboutus{
+    color:white; 
+    font-weight: 900 !important;
+    text-transform: uppercase;
+    font-family: 'Orbitron';
+    font-size:5vw;
+    padding-top:20px;
+    padding-left:20px;
+    padding-bottom:40px; 
+    margin-left:40px;
+}
+strong.twc{
+    width: 400px;
+    height:auto ;
+    font-weight: 900 !important;
+    color:white;
+    text-align:center;
+    margin-left:30px;
+}
+
+.para1{
+    color:white; 
+    font-size:2.2vw;
+    margin-bottom:100px;
+    padding-left: 30px;
+    font-family: "Monaco", monospace;
+}
+
+img{
+    width:40%;
+    height:auto;
+    float:right;
+    margin-bottom:100px;
+    padding:5px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+  } 
+  .grid-item {
+    margin:30px;
+    border: 2px solid white;
+    border-radius:15px;
+    width:90%;
+    height:100%;
+    padding: 20px;
+    font-size: 1.5vw;
+    text-align: center;
+}
+#vision{
+    color:white; 
+    height:90%;
+    background-color:black;
+}
+#mission{
+    color:white; 
+    background-color:black;
+    height:90%;
+}
+
+.contactus h5{
+    font-size:4vw;
+}
+.contactus{
+    background-color:black !important;
+    text-align:center;
+    margin:20px;
+    margin-top:100px;
+    border:1px solid grey;
+    border-radius:10px;
+    color:white;
+}
+li#address{
+    font-size:2vw;
+    margin-top:20px;
+    margin-bottom:50px; 
+}
+li#email{
+    font-size:2vw;
+    margin-bottom:50px; 
+}
+li#phonenum{
+    font-size:2vw;
+    margin-bottom:100px;
+}
+.contactus h6{
+    font-size:4vw;
+    margin-bottom:30px;
+}
+#cUserM{
+    width:500px;
+    height:100px;
+}
+input{
+    height:20px;
+    width:200px;
+    border:0px solid black;
+    border-radius:4px;  
+}
+textarea{
+    border-radius:6px;
+    width:250px;
+    min-width:100px;
+    height:100px;
+}
+td{
+    float:left;
+}
+input[type="submit"]{
+    cursor:pointer;
+   width:80px !important;
+}
+
+input[type="submit"]:hover{
+    transition:0.7s;
+    width:80px;
+    height:30px;
+    color:grey;
+    border:3px solid white;
+}
+table{
+    margin:0 auto;
+}
+.contactus {
+    --c: white; /* the color */
+    --b: .1em;    /* border length*/
+    --d: 5px;    /* the cube depth */
+    --_s: calc(var(--d) + var(--b));
+    
+    color: var(--c);
+    border: solid whitesmoke;
+    border-width: var(--b) var(--b) var(--_s) var(--_s);
+    background:
+      conic-gradient(at left var(--d)  bottom var(--d),
+        #0000 90deg, rgb(255 255 255 /0.3) 0 225deg,rgb(255 255 255 /0.6) 0) border-box,
+      conic-gradient(at left var(--_s) bottom var(--_s),
+        #0000 90deg,var(--c) 0) 0 100%/calc(100% - var(--b)) calc(100% - var(--b))  border-box;
+    transform: translate(calc(var(--d)/-1),var(--d));
+    clip-path: 
+      polygon(
+       var(--d) 0%, 
+       var(--d) 0%, 
+       100% 0%, 
+       100% calc(100% - var(--d)),
+       100% calc(100% - var(--d)),
+       var(--d) calc(100% - var(--d))
+      );
+    transition: 0.5s;
+  }
+ .contactus:hover {
+    transform: translate(0,0);
+    clip-path: 
+      polygon(
+       0% var(--d), 
+       var(--d) 0%, 
+       100% 0%, 
+       100% calc(100% - var(--d)), 
+       calc(100% - var(--d)) 100%, 
+       0% 100%
+     );
+  }
+  @font-face {
+    font-family: Clip;
+    src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+    }
+    .sign {
+    background-image: radial-gradient(
+        ellipse 50% 35% at 50% 50%,
+        #6b1839,
+        transparent
+    );
+    transform: translate(-50%, -50%);
+    font-family: "Clip";
+    text-transform: uppercase;
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    animation: shine 2s forwards, flicker 3s infinite;
+    }
+
+    @keyframes blink {
+    0%,
+    22%,
+    36%,
+    75% {
+        color: #ffe6ff;
+        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    }
+    28%,
+    33% {
+        color: #ff65bd;
+        text-shadow: none;
+    }
+    82%,
+    97% {
+        color: #ff2483;
+        text-shadow: none;
+    }
+    }
+
+    .flicker {
+    animation: shine 2s forwards, blink 3s 2s infinite;
+    }
+
+    .fast-flicker {
+    animation: shine 2s forwards, blink 10s 1s infinite;
+    }
+
+    @keyframes shine {
+    0% {
+        color: #6b1839;
+        text-shadow: none;
+    }
+    100% {
+        color: #ffe6ff;
+        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    }
+    }
+
+    @keyframes flicker {
+    from {
+        opacity: 1;
+    }
+
+    4% {
+        opacity: 0.9;
+    }
+
+    6% {
+        opacity: 0.85;
+    }
+
+    8% {
+        opacity: 0.95;
+    }
+
+    10% {
+        opacity: 0.9;
+    }
+
+    11% {
+        opacity: 0.922;
+    }
+
+    12% {
+        opacity: 0.9;
+    }
+
+    14% {
+        opacity: 0.95;
+    }
+
+    16% {
+        opacity: 0.98;
+    }
+
+    17% {
+        opacity: 0.9;
+    }
+
+    19% {
+        opacity: 0.93;
+    }
+
+    20% {
+        opacity: 0.99;
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    26% {
+        opacity: 0.94;
+    }
+
+    28% {
+        opacity: 0.98;
+    }
+
+    37% {
+        opacity: 0.93;
+    }
+
+    38% {
+        opacity: 0.5;
+    }
+
+    39% {
+        opacity: 0.96;
+    }
+
+    42% {
+        opacity: 1;
+    }
+
+    44% {
+        opacity: 0.97;
+    }
+
+    46% {
+        opacity: 0.94;
+    }
+
+    56% {
+        opacity: 0.9;
+    }
+
+    58% {
+        opacity: 0.9;
+    }
+
+    60% {
+        opacity: 0.99;
+    }
+
+    68% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0.9;
+    }
+
+    72% {
+        opacity: 0.95;
+    }
+
+    93% {
+        opacity: 0.93;
+    }
+
+    95% {
+        opacity: 0.95;
+    }
+
+    97% {
+        opacity: 0.93;
+    }
+
+    to {
+        opacity: 1;
+    }
+    }
+    @media only screen and (max-width:530px) {
+        /* For mobile phones: */
+       
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto;
+            padding: 10px;
+          } 
+          .grid-item {
+            margin:30px;
+            border: 2px solid white;
+            border-radius:15px;
+            width:80%;
+            height:100%;
+            padding: 30px;
+            font-size: 16px;
+            text-align: center;
+        }
+        #contact {
+            margin-top:150px;
+        }
+        .contactus h5{
+            font-size:25px;
+        }
+        .contactus > ul > li{
+            font-size:20px!important;
+        }
+        .contactus h6{
+            font-size:25px;
+        }
+        #reachOut{
+            margin-top:10px;
+            padding:20px;
+        }
+      }
+
+
+
+

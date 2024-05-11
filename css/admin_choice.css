@@ -1,0 +1,104 @@
+html{
+
+    background-image:url('../pics/adminchoice.jpg');
+    background-image:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+h1{
+    text-align:center;
+}
+.grid-container {
+    background-image:url('../pics/adminchoice2.jpg');
+    background-size:cover;
+    grid-template-columns: auto;
+    border:3px solid black;
+    border-radius:20px;   
+    width:60%;
+    height:400px;
+    margin:0 auto;
+    margin-top:-100px;
+    display: grid;
+    padding: 10px;
+  }
+  .grid-item {
+    width:200px;
+    height:5px;
+    background-color: maroon;
+    border: 2px solid black;
+    border-radius:20px;
+    padding: 30px;
+    margin:0 auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size: 1.5vw;
+    text-align: center; 
+    transition:0.7s;
+  }
+  .grid-item:hover{
+    width:300px;
+    height:20px;
+    background-color: darkblue;
+  }
+  a{
+    color:white;
+    text-decoration:none;
+  }
+  a:hover{
+    color:lightgreen;
+  }
+
+  .title-word {
+    animation: color-animation 4s linear infinite;
+  }
+  
+  .title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+  }
+  
+  .title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+  }
+  
+  .title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+  }
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  
+  /* Here are just some visual styles. 🖌 */
+  
+  .container {
+    display: grid;
+    place-items: center;  
+    text-align: center;
+    height: 40vh
+  }
+  
+  .title {
+    margin-top:-80px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 3vw;
+    text-transform: uppercase;
+  }

@@ -1,0 +1,83 @@
+
+html{
+    background-image:url('../pics/registerpubg.jpg');  
+    background-size:cover;
+}
+body 
+{
+  color:white;
+}
+#formpubg{
+    width:50%;
+    border: 3px solid whitesmoke;
+    border-radius: 10px;
+    margin:100px auto;
+    background-image:url('../pics/registerpubg2.jpg'); 
+    background-size:cover; 
+    margin-top:40px;
+    transition: 0.7s;
+}
+#formpubg:hover{
+   border: 3px solid #7DD5FA;
+  
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+width:  40%;
+padding: 10px 10px;
+margin: 8px 0;
+display: inline-block;
+border: 2px solid #ccc;
+box-sizing: border-box;
+border-radius: 10px;
+
+}
+#teamName{
+    width:30%;
+
+}
+
+input[type=submit] {
+    color:wheat;
+    width:20%;    
+    margin-left:80px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+input[type=reset] { 
+    color:wheat;   
+    width:20%;
+    border-radius: 10px;
+    cursor: pointer;
+}   
+input[type=reset]:hover, input[type=submit]:hover{
+    color:#7DD5FA;
+}
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+
+.waviy {
+    text-align:center;
+  position: relative;
+  margin-top:50px;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 4vw;
+}
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}

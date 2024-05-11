@@ -1,0 +1,143 @@
+html{
+    background-image:url('../pics/enq222.png');
+    background-position:center;
+    background-size:cover;
+}
+body{
+    color:white;
+}
+
+.showTable{
+    background-color:rgba(0, 0, 0, 0.619);
+    border:2px solid black;
+    box-shadow: 5px 10px rgba(128, 128, 128, 0.522);
+    border-radius:10px;
+    margin:0 auto;
+    width:90%;
+    height:80%;
+}
+
+a{
+ color:white;
+ font-weight:bold;
+ text-decoration:none;
+}
+a:hover{
+    color:lightgreen;
+}
+
+.userEnquiry ul {
+    margin:10px;
+    text-align:center;
+    margin-left:100px;
+    position: relative;
+    display: flex;
+ }
+.userEnquiry li {
+    list-style: none;
+}
+.searchTable{
+  background-color:rgba(0, 0, 0, 0.619);
+  border:2px solid black;
+  box-shadow: 5px 10px rgba(128, 128, 128, 0.522);
+  border-radius:10px;
+  margin:0 auto;
+  margin-top:30px;
+  margin-bottom:100px;
+
+}
+h1{
+  text-align:center;
+  
+}
+.searchEnquiry{
+  margin-left:150px;
+}
+.searchArea{
+  border-radius:10px;
+  width:20%;
+  height:5%;
+  margin:20PX;
+}
+.searchBtn{
+  cursor:pointer;
+  width:5%;
+  height:5%;
+  border-radius:10px;
+  border:none;
+  font-weight:bold;
+}
+.searchBtn:hover{
+  background-color:maroon;
+  color:white;
+  cursor:pointer;
+}
+.deleteMessage{
+  text-align:center;
+  font-weight:bold;
+  font-size:30px;
+}
+.multipleDeleteButton{
+  margin:0 auto;
+  margin-top:50px;
+  margin-left:550px;
+  border-radius:10px;
+  border:none;
+  font-weight:bold;
+  width:10%;
+  padding:10px;
+}
+.multipleDeleteButton:hover{
+  background-color:maroon;
+  color:white;
+  cursor:pointer;
+}
+
+  
+  .rgbCheck {
+    position: absolute;
+    opacity:0;
+    margin-left:-40px;
+    cursor: pointer;
+    height: 75px;
+    width: 80px;
+    z-index: 100;
+  }
+  
+  .rgbLetter {
+    position: relative;
+    height: 80px;
+    width: 80px;
+    background: rgba(128, 128, 128, 0.244);
+    color:white;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+    margin: 0 4px;
+    border-radius: 20px;
+    box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.05),
+      4px 4px 6px rgba(0, 0, 0, 0.2),
+      inset -1px -1px 4px rgba(255, 255, 255, 0.05),
+      inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .rgbCheck:checked ~ div {
+    box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.05),
+      inset 4px 4px 6px rgba(0, 0, 0, 0.2);
+    color: yellow;
+    text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+    animation: glow 1s linear infinite;
+  }
+  
+  @keyframes glow {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
